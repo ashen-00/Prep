@@ -1,0 +1,7 @@
+The tricks to this are 
+(1) Know how to avoid duplicate triplets
+    Involves sorting the list, and then when you find a solution, 
+    continue to move one side until you're past that value you've already added to the solutions
+
+(2) Sliding window to find the 2 complementary value for each indexed value
+    Because it's sorted, you'll never need to check backwards
