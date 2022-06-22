@@ -1,0 +1,25 @@
+BACKTRACKING
+The core idea of backtracking is to explore all solutions, 
+    building partial candidates and then pruning that branch
+    once we realize that candidate cannot be completed to a valid solution
+
+Backtracking is often used in constraint satisfaction NP-hard problems such as 
+    placing queens on a chessboard, map coloring, and sudoku
+
+This combination sum problem is very similar to the minimum stamps problem
+However, minimum stamps uses DP while combination sum uses Backtracking. Why?
+    In Combination Sum, backtracking allows us to find all solutions
+    Minimum stamps is looking for an optimal solution, and satisfies the
+        Principle of Optimality so we don't need ALL the solutions, just the best
+
+The basic format of a backtracking algorithm is:
+    result = []
+    def backtracking():
+        # If Solved Case -> append our current candidate to result
+        # For each choice
+            # If Failed Case -> continue to next choice or prune
+            # Set flags
+            # Call backtrack iteration with our choice
+            # Undo flags so we can move onto next choice
+        # Call intial backtracking
+        # Return result
